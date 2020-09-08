@@ -112,7 +112,7 @@ function! VSTerminalCreateNew()
     let g:vs_called_by_toggle = 1
     if has('nvim')
         exec 'enew'
-        exec "call termopen(\'zsh\')"
+        exec "call termopen(\'bash\')"
     else
         exec 'terminal ++curwin ' . g:vs_terminal_custom_command
     endif
